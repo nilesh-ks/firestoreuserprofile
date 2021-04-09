@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".CreateProfile">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:clickable="true"
+        android:background="@drawable/ic_image"
+        android:onClick="ChooseImage"
+        android:id="@+id/imageview_cp"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/name_et_cp"
+        android:autoText="true"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Age"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:inputType="number"
+        android:id="@+id/age_et_cp"
+        android:autoText="true"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Bio"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/bio_et_cp"
+        android:autoText="true"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:inputType="textEmailAddress"
+        android:id="@+id/email_et_cp"
+        android:autoText="true"
+        android:backgroundTint="@color/black"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Website"
+        android:textColor="@android:color/black"
+        android:layout_margin="10dp"
+        android:inputType="textPersonName"
+        android:id="@+id/website_et_cp"
+        android:autoText="true"
+        android:backgroundTint="@color/black"/>
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="save profile"
+        android:id="@+id/save_profile_btn_cp"
+        android:layout_margin="10dp"/>
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/black"
+        android:visibility="invisible"
+        android:id="@+id/progressbar_cp"/>
+
+</LinearLayout>
